@@ -1,0 +1,107 @@
+/* variables */
+
+$ltblue :rgb(159, 199,243);
+$greytxt :rgb(131,136,142);
+$grey :rgba(131,136,142, 0.2);
+$bluemist :rgba(231,241,252, 0.3);
+$borderblue: rgb(119,149,182);
+
+/*  */
+@import "base";
+
+.container {
+  max-width: 960px;
+  min-height: 500px;
+  padding: 2em;
+  margin: 10px auto;
+  background: white;
+  border-style: solid;
+  border-color: $borderblue;
+  border-radius: 35px;
+  border-width: 5px;}
+
+h1,h2,h3 {color: black;};
+h4 {color:$ltblue;}
+
+h2,h3 {font-weight: normal;}
+h1,h2,h3,h4,h5,ul,p {margin: 0}
+
+header {
+  h4 {
+    font-weight: normal;
+    color: $ltblue;
+  }
+  hr {margin-top: 2px;}
+}
+
+.summary {
+  p {margin-bottom: 5px;
+    margin-top: 5px;}
+  ul {margin-left: 2em;
+    li p {margin: 0px;}
+  }
+}
+
+a {color: $ltblue;
+  text-decoration: none;}
+a:hover {text-decoration: underline;
+        color: $borderblue;}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: $ltblue;
+  border-width: 1.5px;
+}
+
+.experience {
+  h4 {font-weight: normal;}
+  hr {
+    border-color: $grey;
+    border-width: .5px;
+  }
+}
+
+.liststyle {
+  color: $ltblue;
+  p {
+    color: $greytxt;
+  }
+}
+
+/* used when experimenting with a table instead of a grid */
+/*
+table {
+  width: 100%;
+  border-collapse: collapse;
+  vertical-align: top;
+  th,td {border: 1.5px, solid, $grey;}
+  th {text-align: left;
+    color: $ltblue;}
+}
+
+table, th, td {
+  border-right: 1px solid black;
+} */
+
+.row {width: 100%;}
+.third {width: 33.3%;
+  float: left;
+  margin:auto;}
+.l-border {
+  border-left: .5px solid $grey;
+  padding-left:2.4em;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
